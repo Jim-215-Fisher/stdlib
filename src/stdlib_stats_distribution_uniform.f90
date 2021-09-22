@@ -23,40 +23,40 @@ module stdlib_stats_distribution_uniform
     !! ([Specification](../page/specs/stdlib_stats_distribution_uniform.html#
     !! description))
 
-        module procedure unif_dist_rvs_0_rsp                 ! 0 dummy variable
+        module procedure rvs_unif_0_rsp                 ! 0 dummy variable
 
-        module procedure unif_dist_rvs_1_iint8     ! 1 dummy variable
-        module procedure unif_dist_rvs_1_iint16     ! 1 dummy variable
-        module procedure unif_dist_rvs_1_iint32     ! 1 dummy variable
-        module procedure unif_dist_rvs_1_iint64     ! 1 dummy variable
-        module procedure unif_dist_rvs_1_rsp     ! 1 dummy variable
-        module procedure unif_dist_rvs_1_rdp     ! 1 dummy variable
-        module procedure unif_dist_rvs_1_rqp     ! 1 dummy variable
-        module procedure unif_dist_rvs_1_csp     ! 1 dummy variable
-        module procedure unif_dist_rvs_1_cdp     ! 1 dummy variable
-        module procedure unif_dist_rvs_1_cqp     ! 1 dummy variable
+        module procedure rvs_unif_1_iint8     ! 1 dummy variable
+        module procedure rvs_unif_1_iint16     ! 1 dummy variable
+        module procedure rvs_unif_1_iint32     ! 1 dummy variable
+        module procedure rvs_unif_1_iint64     ! 1 dummy variable
+        module procedure rvs_unif_1_rsp     ! 1 dummy variable
+        module procedure rvs_unif_1_rdp     ! 1 dummy variable
+        module procedure rvs_unif_1_rqp     ! 1 dummy variable
+        module procedure rvs_unif_1_csp     ! 1 dummy variable
+        module procedure rvs_unif_1_cdp     ! 1 dummy variable
+        module procedure rvs_unif_1_cqp     ! 1 dummy variable
 
-        module procedure unif_dist_rvs_iint8       ! 2 dummy variables
-        module procedure unif_dist_rvs_iint16       ! 2 dummy variables
-        module procedure unif_dist_rvs_iint32       ! 2 dummy variables
-        module procedure unif_dist_rvs_iint64       ! 2 dummy variables
-        module procedure unif_dist_rvs_rsp       ! 2 dummy variables
-        module procedure unif_dist_rvs_rdp       ! 2 dummy variables
-        module procedure unif_dist_rvs_rqp       ! 2 dummy variables
-        module procedure unif_dist_rvs_csp       ! 2 dummy variables
-        module procedure unif_dist_rvs_cdp       ! 2 dummy variables
-        module procedure unif_dist_rvs_cqp       ! 2 dummy variables
+        module procedure rvs_unif_iint8       ! 2 dummy variables
+        module procedure rvs_unif_iint16       ! 2 dummy variables
+        module procedure rvs_unif_iint32       ! 2 dummy variables
+        module procedure rvs_unif_iint64       ! 2 dummy variables
+        module procedure rvs_unif_rsp       ! 2 dummy variables
+        module procedure rvs_unif_rdp       ! 2 dummy variables
+        module procedure rvs_unif_rqp       ! 2 dummy variables
+        module procedure rvs_unif_csp       ! 2 dummy variables
+        module procedure rvs_unif_cdp       ! 2 dummy variables
+        module procedure rvs_unif_cqp       ! 2 dummy variables
 
-        module procedure unif_dist_rvs_array_iint8 ! 3 dummy variables
-        module procedure unif_dist_rvs_array_iint16 ! 3 dummy variables
-        module procedure unif_dist_rvs_array_iint32 ! 3 dummy variables
-        module procedure unif_dist_rvs_array_iint64 ! 3 dummy variables
-        module procedure unif_dist_rvs_array_rsp ! 3 dummy variables
-        module procedure unif_dist_rvs_array_rdp ! 3 dummy variables
-        module procedure unif_dist_rvs_array_rqp ! 3 dummy variables
-        module procedure unif_dist_rvs_array_csp ! 3 dummy variables
-        module procedure unif_dist_rvs_array_cdp ! 3 dummy variables
-        module procedure unif_dist_rvs_array_cqp ! 3 dummy variables
+        module procedure rvs_unif_array_iint8 ! 3 dummy variables
+        module procedure rvs_unif_array_iint16 ! 3 dummy variables
+        module procedure rvs_unif_array_iint32 ! 3 dummy variables
+        module procedure rvs_unif_array_iint64 ! 3 dummy variables
+        module procedure rvs_unif_array_rsp ! 3 dummy variables
+        module procedure rvs_unif_array_rdp ! 3 dummy variables
+        module procedure rvs_unif_array_rqp ! 3 dummy variables
+        module procedure rvs_unif_array_csp ! 3 dummy variables
+        module procedure rvs_unif_array_cdp ! 3 dummy variables
+        module procedure rvs_unif_array_cqp ! 3 dummy variables
     end interface rvs_uniform
 
 
@@ -68,16 +68,16 @@ module stdlib_stats_distribution_uniform
     !! ([Specification](../page/specs/stdlib_stats_distribution_uniform.html#
     !! description))
 
-        module procedure unif_dist_pdf_iint8
-        module procedure unif_dist_pdf_iint16
-        module procedure unif_dist_pdf_iint32
-        module procedure unif_dist_pdf_iint64
-        module procedure unif_dist_pdf_rsp
-        module procedure unif_dist_pdf_rdp
-        module procedure unif_dist_pdf_rqp
-        module procedure unif_dist_pdf_csp
-        module procedure unif_dist_pdf_cdp
-        module procedure unif_dist_pdf_cqp
+        module procedure pdf_unif_iint8
+        module procedure pdf_unif_iint16
+        module procedure pdf_unif_iint32
+        module procedure pdf_unif_iint64
+        module procedure pdf_unif_rsp
+        module procedure pdf_unif_rdp
+        module procedure pdf_unif_rqp
+        module procedure pdf_unif_csp
+        module procedure pdf_unif_cdp
+        module procedure pdf_unif_cqp
     end interface pdf_uniform
 
 
@@ -89,16 +89,16 @@ module stdlib_stats_distribution_uniform
     !! ([Specification](../page/specs/stdlib_stats_distribution_uniform.html#
     !! description))
     !!
-        module procedure unif_dist_cdf_iint8
-        module procedure unif_dist_cdf_iint16
-        module procedure unif_dist_cdf_iint32
-        module procedure unif_dist_cdf_iint64
-        module procedure unif_dist_cdf_rsp
-        module procedure unif_dist_cdf_rdp
-        module procedure unif_dist_cdf_rqp
-        module procedure unif_dist_cdf_csp
-        module procedure unif_dist_cdf_cdp
-        module procedure unif_dist_cdf_cqp
+        module procedure cdf_unif_iint8
+        module procedure cdf_unif_iint16
+        module procedure cdf_unif_iint32
+        module procedure cdf_unif_iint64
+        module procedure cdf_unif_rsp
+        module procedure cdf_unif_rdp
+        module procedure cdf_unif_rqp
+        module procedure cdf_unif_csp
+        module procedure cdf_unif_cdp
+        module procedure cdf_unif_cqp
     end interface cdf_uniform
 
 
@@ -130,7 +130,7 @@ module stdlib_stats_distribution_uniform
 contains
 
 
-    impure elemental function unif_dist_rvs_1_iint8(scale) result(res)
+    impure elemental function rvs_unif_1_iint8(scale) result(res)
     !
     ! Uniformly distributed integer in [0, scale]
     ! Bitmask with rejection
@@ -142,7 +142,7 @@ contains
         integer(int8) ::  res, u, mask
         integer :: zeros, bits_left, bits
 
-        if(scale <= 0_int8) call error_stop("Error(unif_dist_rvs_1): Uniform"&
+        if(scale <= 0_int8) call error_stop("Error(rvs_unif_1): Uniform"     &
             //" distribution scale parameter must be positive")
         zeros = leadz(scale)
         bits = bit_size(scale) - zeros
@@ -160,9 +160,9 @@ contains
                 bits_left = bits_left - bits
             end do L2
         end do L1
-    end function unif_dist_rvs_1_iint8
+    end function rvs_unif_1_iint8
 
-    impure elemental function unif_dist_rvs_1_iint16(scale) result(res)
+    impure elemental function rvs_unif_1_iint16(scale) result(res)
     !
     ! Uniformly distributed integer in [0, scale]
     ! Bitmask with rejection
@@ -174,7 +174,7 @@ contains
         integer(int16) ::  res, u, mask
         integer :: zeros, bits_left, bits
 
-        if(scale <= 0_int16) call error_stop("Error(unif_dist_rvs_1): Uniform"&
+        if(scale <= 0_int16) call error_stop("Error(rvs_unif_1): Uniform"     &
             //" distribution scale parameter must be positive")
         zeros = leadz(scale)
         bits = bit_size(scale) - zeros
@@ -192,9 +192,9 @@ contains
                 bits_left = bits_left - bits
             end do L2
         end do L1
-    end function unif_dist_rvs_1_iint16
+    end function rvs_unif_1_iint16
 
-    impure elemental function unif_dist_rvs_1_iint32(scale) result(res)
+    impure elemental function rvs_unif_1_iint32(scale) result(res)
     !
     ! Uniformly distributed integer in [0, scale]
     ! Bitmask with rejection
@@ -206,7 +206,7 @@ contains
         integer(int32) ::  res, u, mask
         integer :: zeros, bits_left, bits
 
-        if(scale <= 0_int32) call error_stop("Error(unif_dist_rvs_1): Uniform"&
+        if(scale <= 0_int32) call error_stop("Error(rvs_unif_1): Uniform"     &
             //" distribution scale parameter must be positive")
         zeros = leadz(scale)
         bits = bit_size(scale) - zeros
@@ -224,9 +224,9 @@ contains
                 bits_left = bits_left - bits
             end do L2
         end do L1
-    end function unif_dist_rvs_1_iint32
+    end function rvs_unif_1_iint32
 
-    impure elemental function unif_dist_rvs_1_iint64(scale) result(res)
+    impure elemental function rvs_unif_1_iint64(scale) result(res)
     !
     ! Uniformly distributed integer in [0, scale]
     ! Bitmask with rejection
@@ -238,7 +238,7 @@ contains
         integer(int64) ::  res, u, mask
         integer :: zeros, bits_left, bits
 
-        if(scale <= 0_int64) call error_stop("Error(unif_dist_rvs_1): Uniform"&
+        if(scale <= 0_int64) call error_stop("Error(rvs_unif_1): Uniform"     &
             //" distribution scale parameter must be positive")
         zeros = leadz(scale)
         bits = bit_size(scale) - zeros
@@ -256,67 +256,63 @@ contains
                 bits_left = bits_left - bits
             end do L2
         end do L1
-    end function unif_dist_rvs_1_iint64
+    end function rvs_unif_1_iint64
 
 
 
 
-    impure elemental function unif_dist_rvs_iint8(loc, scale)        &
-        result( res )
+    impure elemental function rvs_unif_iint8(loc, scale) result(res)
     !
     ! Uniformly distributed integer in [loc, loc + scale]
     !
         integer(int8), intent(in) :: loc, scale
         integer(int8)  ::  res
 
-        if(scale <= 0_int8) call error_stop("Error(unif_dist_rvs): Uniform"  &
+        if(scale <= 0_int8) call error_stop("Error(rvs_unif): Uniform"       &
             //" distribution scale parameter must be positive")
-        res = loc + unif_dist_rvs_1_iint8(scale)
-    end function unif_dist_rvs_iint8
+        res = loc + rvs_unif_1_iint8(scale)
+    end function rvs_unif_iint8
 
-    impure elemental function unif_dist_rvs_iint16(loc, scale)        &
-        result( res )
+    impure elemental function rvs_unif_iint16(loc, scale) result(res)
     !
     ! Uniformly distributed integer in [loc, loc + scale]
     !
         integer(int16), intent(in) :: loc, scale
         integer(int16)  ::  res
 
-        if(scale <= 0_int16) call error_stop("Error(unif_dist_rvs): Uniform"  &
+        if(scale <= 0_int16) call error_stop("Error(rvs_unif): Uniform"       &
             //" distribution scale parameter must be positive")
-        res = loc + unif_dist_rvs_1_iint16(scale)
-    end function unif_dist_rvs_iint16
+        res = loc + rvs_unif_1_iint16(scale)
+    end function rvs_unif_iint16
 
-    impure elemental function unif_dist_rvs_iint32(loc, scale)        &
-        result( res )
+    impure elemental function rvs_unif_iint32(loc, scale) result(res)
     !
     ! Uniformly distributed integer in [loc, loc + scale]
     !
         integer(int32), intent(in) :: loc, scale
         integer(int32)  ::  res
 
-        if(scale <= 0_int32) call error_stop("Error(unif_dist_rvs): Uniform"  &
+        if(scale <= 0_int32) call error_stop("Error(rvs_unif): Uniform"       &
             //" distribution scale parameter must be positive")
-        res = loc + unif_dist_rvs_1_iint32(scale)
-    end function unif_dist_rvs_iint32
+        res = loc + rvs_unif_1_iint32(scale)
+    end function rvs_unif_iint32
 
-    impure elemental function unif_dist_rvs_iint64(loc, scale)        &
-        result( res )
+    impure elemental function rvs_unif_iint64(loc, scale) result(res)
     !
     ! Uniformly distributed integer in [loc, loc + scale]
     !
         integer(int64), intent(in) :: loc, scale
         integer(int64)  ::  res
 
-        if(scale <= 0_int64) call error_stop("Error(unif_dist_rvs): Uniform"  &
+        if(scale <= 0_int64) call error_stop("Error(rvs_unif): Uniform"       &
             //" distribution scale parameter must be positive")
-        res = loc + unif_dist_rvs_1_iint64(scale)
-    end function unif_dist_rvs_iint64
+        res = loc + rvs_unif_1_iint64(scale)
+    end function rvs_unif_iint64
 
 
 
 
-    impure elemental function unif_dist_rvs_0_rsp( ) result(res)
+    impure elemental function rvs_unif_0_rsp( ) result(res)
     !
     ! Uniformly distributed float in [0,1]
     ! Based on the paper by Frederic Goualard, "Generating Random Floating-
@@ -328,9 +324,9 @@ contains
 
         tmp = shiftr(dist_rand(INT_ONE), 11)        ! Get random from [0,2^53-1]
         res = real(tmp * MESENNE_NUMBER, kind = sp) ! convert to [0,1]
-    end function unif_dist_rvs_0_rsp
+    end function rvs_unif_0_rsp
 
-    impure elemental function unif_dist_rvs_0_rdp( ) result(res)
+    impure elemental function rvs_unif_0_rdp( ) result(res)
     !
     ! Uniformly distributed float in [0,1]
     ! Based on the paper by Frederic Goualard, "Generating Random Floating-
@@ -342,9 +338,9 @@ contains
 
         tmp = shiftr(dist_rand(INT_ONE), 11)        ! Get random from [0,2^53-1]
         res = real(tmp * MESENNE_NUMBER, kind = dp) ! convert to [0,1]
-    end function unif_dist_rvs_0_rdp
+    end function rvs_unif_0_rdp
 
-    impure elemental function unif_dist_rvs_0_rqp( ) result(res)
+    impure elemental function rvs_unif_0_rqp( ) result(res)
     !
     ! Uniformly distributed float in [0,1]
     ! Based on the paper by Frederic Goualard, "Generating Random Floating-
@@ -356,94 +352,90 @@ contains
 
         tmp = shiftr(dist_rand(INT_ONE), 11)        ! Get random from [0,2^53-1]
         res = real(tmp * MESENNE_NUMBER, kind = qp) ! convert to [0,1]
-    end function unif_dist_rvs_0_rqp
+    end function rvs_unif_0_rqp
 
 
 
 
-    impure elemental function unif_dist_rvs_1_rsp(scale) result(res)
+    impure elemental function rvs_unif_1_rsp(scale) result(res)
     !
     ! Uniformly distributed float in [0, scale]
     !
         real(sp), intent(in) :: scale
         real(sp)  ::  res
 
-        if(scale == 0._sp) call error_stop("Error(unif_dist_rvs_1): "      &
+        if(scale == 0._sp) call error_stop("Error(rvs_unif_1): "           &
             //"Uniform distribution scale parameter must be non-zero")
-        res = scale * unif_dist_rvs_0_rsp( )
-    end function unif_dist_rvs_1_rsp
+        res = scale * rvs_unif_0_rsp( )
+    end function rvs_unif_1_rsp
 
-    impure elemental function unif_dist_rvs_1_rdp(scale) result(res)
+    impure elemental function rvs_unif_1_rdp(scale) result(res)
     !
     ! Uniformly distributed float in [0, scale]
     !
         real(dp), intent(in) :: scale
         real(dp)  ::  res
 
-        if(scale == 0._dp) call error_stop("Error(unif_dist_rvs_1): "      &
+        if(scale == 0._dp) call error_stop("Error(rvs_unif_1): "           &
             //"Uniform distribution scale parameter must be non-zero")
-        res = scale * unif_dist_rvs_0_rdp( )
-    end function unif_dist_rvs_1_rdp
+        res = scale * rvs_unif_0_rdp( )
+    end function rvs_unif_1_rdp
 
-    impure elemental function unif_dist_rvs_1_rqp(scale) result(res)
+    impure elemental function rvs_unif_1_rqp(scale) result(res)
     !
     ! Uniformly distributed float in [0, scale]
     !
         real(qp), intent(in) :: scale
         real(qp)  ::  res
 
-        if(scale == 0._qp) call error_stop("Error(unif_dist_rvs_1): "      &
+        if(scale == 0._qp) call error_stop("Error(rvs_unif_1): "           &
             //"Uniform distribution scale parameter must be non-zero")
-        res = scale * unif_dist_rvs_0_rqp( )
-    end function unif_dist_rvs_1_rqp
+        res = scale * rvs_unif_0_rqp( )
+    end function rvs_unif_1_rqp
 
 
 
 
-    impure elemental function unif_dist_rvs_rsp(loc, scale)        &
-        result(res)
+    impure elemental function rvs_unif_rsp(loc, scale) result(res)
     !
     ! Uniformly distributed float in [loc, loc + scale]
     !
         real(sp), intent(in) :: loc, scale
         real(sp)  ::  res
 
-        if(scale == 0._sp) call error_stop("Error(unif_dist_rvs): "        &
+        if(scale == 0._sp) call error_stop("Error(rvs_unif): "             &
            //"Uniform distribution scale parameter must be non-zero")
-        res = loc + scale * unif_dist_rvs_0_rsp( )
-    end function unif_dist_rvs_rsp
+        res = loc + scale * rvs_unif_0_rsp( )
+    end function rvs_unif_rsp
 
-    impure elemental function unif_dist_rvs_rdp(loc, scale)        &
-        result(res)
+    impure elemental function rvs_unif_rdp(loc, scale) result(res)
     !
     ! Uniformly distributed float in [loc, loc + scale]
     !
         real(dp), intent(in) :: loc, scale
         real(dp)  ::  res
 
-        if(scale == 0._dp) call error_stop("Error(unif_dist_rvs): "        &
+        if(scale == 0._dp) call error_stop("Error(rvs_unif): "             &
            //"Uniform distribution scale parameter must be non-zero")
-        res = loc + scale * unif_dist_rvs_0_rdp( )
-    end function unif_dist_rvs_rdp
+        res = loc + scale * rvs_unif_0_rdp( )
+    end function rvs_unif_rdp
 
-    impure elemental function unif_dist_rvs_rqp(loc, scale)        &
-        result(res)
+    impure elemental function rvs_unif_rqp(loc, scale) result(res)
     !
     ! Uniformly distributed float in [loc, loc + scale]
     !
         real(qp), intent(in) :: loc, scale
         real(qp)  ::  res
 
-        if(scale == 0._qp) call error_stop("Error(unif_dist_rvs): "        &
+        if(scale == 0._qp) call error_stop("Error(rvs_unif): "             &
            //"Uniform distribution scale parameter must be non-zero")
-        res = loc + scale * unif_dist_rvs_0_rqp( )
-    end function unif_dist_rvs_rqp
+        res = loc + scale * rvs_unif_0_rqp( )
+    end function rvs_unif_rqp
 
 
 
 
-    impure elemental function unif_dist_rvs_1_csp(scale)           &
-        result(res)
+    impure elemental function rvs_unif_1_csp(scale) result(res)
     !
     ! Uniformly distributed complex in [(0,0i), (scale, i(scale))]
     ! The real part and imaginary part are independent of each other, so that
@@ -453,9 +445,9 @@ contains
         complex(sp) :: res
         real(sp) :: r1, tr, ti
 
-        if(scale == (0.0_sp, 0.0_sp)) call error_stop("Error(uni_dist_"&
-           //"rvs_1): Uniform distribution scale parameter must be non-zero")
-        r1 = unif_dist_rvs_0_rsp( )
+        if(scale == (0.0_sp, 0.0_sp)) call error_stop("Error(rvs_uni_" &
+           //"1): Uniform distribution scale parameter must be non-zero")
+        r1 = rvs_unif_0_rsp( )
         if(scale % re == 0.0_sp) then
             ti = scale % im * r1
             tr = 0.0_sp
@@ -464,14 +456,13 @@ contains
             ti = 0.0_sp
         else
             tr = scale % re * r1
-            r1 = unif_dist_rvs_0_rsp( )
+            r1 = rvs_unif_0_rsp( )
             ti = scale % im * r1
         end if
         res = cmplx(tr, ti, kind=sp)
-    end function unif_dist_rvs_1_csp
+    end function rvs_unif_1_csp
 
-    impure elemental function unif_dist_rvs_1_cdp(scale)           &
-        result(res)
+    impure elemental function rvs_unif_1_cdp(scale) result(res)
     !
     ! Uniformly distributed complex in [(0,0i), (scale, i(scale))]
     ! The real part and imaginary part are independent of each other, so that
@@ -481,9 +472,9 @@ contains
         complex(dp) :: res
         real(dp) :: r1, tr, ti
 
-        if(scale == (0.0_dp, 0.0_dp)) call error_stop("Error(uni_dist_"&
-           //"rvs_1): Uniform distribution scale parameter must be non-zero")
-        r1 = unif_dist_rvs_0_rdp( )
+        if(scale == (0.0_dp, 0.0_dp)) call error_stop("Error(rvs_uni_" &
+           //"1): Uniform distribution scale parameter must be non-zero")
+        r1 = rvs_unif_0_rdp( )
         if(scale % re == 0.0_dp) then
             ti = scale % im * r1
             tr = 0.0_dp
@@ -492,14 +483,13 @@ contains
             ti = 0.0_dp
         else
             tr = scale % re * r1
-            r1 = unif_dist_rvs_0_rdp( )
+            r1 = rvs_unif_0_rdp( )
             ti = scale % im * r1
         end if
         res = cmplx(tr, ti, kind=dp)
-    end function unif_dist_rvs_1_cdp
+    end function rvs_unif_1_cdp
 
-    impure elemental function unif_dist_rvs_1_cqp(scale)           &
-        result(res)
+    impure elemental function rvs_unif_1_cqp(scale) result(res)
     !
     ! Uniformly distributed complex in [(0,0i), (scale, i(scale))]
     ! The real part and imaginary part are independent of each other, so that
@@ -509,9 +499,9 @@ contains
         complex(qp) :: res
         real(qp) :: r1, tr, ti
 
-        if(scale == (0.0_qp, 0.0_qp)) call error_stop("Error(uni_dist_"&
-           //"rvs_1): Uniform distribution scale parameter must be non-zero")
-        r1 = unif_dist_rvs_0_rqp( )
+        if(scale == (0.0_qp, 0.0_qp)) call error_stop("Error(rvs_uni_" &
+           //"1): Uniform distribution scale parameter must be non-zero")
+        r1 = rvs_unif_0_rqp( )
         if(scale % re == 0.0_qp) then
             ti = scale % im * r1
             tr = 0.0_qp
@@ -520,17 +510,16 @@ contains
             ti = 0.0_qp
         else
             tr = scale % re * r1
-            r1 = unif_dist_rvs_0_rqp( )
+            r1 = rvs_unif_0_rqp( )
             ti = scale % im * r1
         end if
         res = cmplx(tr, ti, kind=qp)
-    end function unif_dist_rvs_1_cqp
+    end function rvs_unif_1_cqp
 
 
 
 
-    impure elemental function unif_dist_rvs_csp(loc, scale)        &
-        result(res)
+    impure elemental function rvs_unif_csp(loc, scale) result(res)
     !
     ! Uniformly distributed complex in [(loc,iloc), (loc + scale, i(loc +
     ! scale))].
@@ -542,9 +531,9 @@ contains
         complex(sp) :: res
         real(sp) :: r1, tr, ti
 
-        if(scale == (0.0_sp, 0.0_sp)) call error_stop("Error(uni_dist_"&
-            //"rvs): Uniform distribution scale parameter must be non-zero")
-        r1 = unif_dist_rvs_0_rsp( )
+        if(scale == (0.0_sp, 0.0_sp)) call error_stop("Error(rvs_uni_" &
+            //"): Uniform distribution scale parameter must be non-zero")
+        r1 = rvs_unif_0_rsp( )
         if(scale % re == 0.0_sp) then
             tr = loc % re
             ti = loc % im + scale % im * r1
@@ -553,14 +542,13 @@ contains
             ti = loc % im
         else
             tr = loc % re + scale % re * r1
-            r1 = unif_dist_rvs_0_rsp( )
+            r1 = rvs_unif_0_rsp( )
             ti = loc % im + scale % im * r1
         end if
         res = cmplx(tr, ti, kind=sp)
-    end function unif_dist_rvs_csp
+    end function rvs_unif_csp
 
-    impure elemental function unif_dist_rvs_cdp(loc, scale)        &
-        result(res)
+    impure elemental function rvs_unif_cdp(loc, scale) result(res)
     !
     ! Uniformly distributed complex in [(loc,iloc), (loc + scale, i(loc +
     ! scale))].
@@ -572,9 +560,9 @@ contains
         complex(dp) :: res
         real(dp) :: r1, tr, ti
 
-        if(scale == (0.0_dp, 0.0_dp)) call error_stop("Error(uni_dist_"&
-            //"rvs): Uniform distribution scale parameter must be non-zero")
-        r1 = unif_dist_rvs_0_rdp( )
+        if(scale == (0.0_dp, 0.0_dp)) call error_stop("Error(rvs_uni_" &
+            //"): Uniform distribution scale parameter must be non-zero")
+        r1 = rvs_unif_0_rdp( )
         if(scale % re == 0.0_dp) then
             tr = loc % re
             ti = loc % im + scale % im * r1
@@ -583,14 +571,13 @@ contains
             ti = loc % im
         else
             tr = loc % re + scale % re * r1
-            r1 = unif_dist_rvs_0_rdp( )
+            r1 = rvs_unif_0_rdp( )
             ti = loc % im + scale % im * r1
         end if
         res = cmplx(tr, ti, kind=dp)
-    end function unif_dist_rvs_cdp
+    end function rvs_unif_cdp
 
-    impure elemental function unif_dist_rvs_cqp(loc, scale)        &
-        result(res)
+    impure elemental function rvs_unif_cqp(loc, scale) result(res)
     !
     ! Uniformly distributed complex in [(loc,iloc), (loc + scale, i(loc +
     ! scale))].
@@ -602,9 +589,9 @@ contains
         complex(qp) :: res
         real(qp) :: r1, tr, ti
 
-        if(scale == (0.0_qp, 0.0_qp)) call error_stop("Error(uni_dist_"&
-            //"rvs): Uniform distribution scale parameter must be non-zero")
-        r1 = unif_dist_rvs_0_rqp( )
+        if(scale == (0.0_qp, 0.0_qp)) call error_stop("Error(rvs_uni_" &
+            //"): Uniform distribution scale parameter must be non-zero")
+        r1 = rvs_unif_0_rqp( )
         if(scale % re == 0.0_qp) then
             tr = loc % re
             ti = loc % im + scale % im * r1
@@ -613,17 +600,16 @@ contains
             ti = loc % im
         else
             tr = loc % re + scale % re * r1
-            r1 = unif_dist_rvs_0_rqp( )
+            r1 = rvs_unif_0_rqp( )
             ti = loc % im + scale % im * r1
         end if
         res = cmplx(tr, ti, kind=qp)
-    end function unif_dist_rvs_cqp
+    end function rvs_unif_cqp
 
 
 
 
-    function unif_dist_rvs_array_iint8(loc, scale, array_size)       &
-        result(res)
+    function rvs_unif_array_iint8(loc, scale, array_size) result(res)
 
         integer, intent(in) :: array_size
         integer(int8), intent(in) :: loc, scale
@@ -631,7 +617,7 @@ contains
         integer(int8) :: u, mask, nn
         integer :: i, zeros, bits_left, bits
 
-        if(scale == 0_int8) call error_stop("Error(unif_dist_rvs_array): "   &
+        if(scale == 0_int8) call error_stop("Error(rvs_unif_array): "        &
             //"Uniform distribution scale parameter must be non-zero")
         zeros = leadz(scale)
         bits = bit_size(scale) - zeros
@@ -652,10 +638,9 @@ contains
             end do L1
             res(i) = loc + nn
         end do
-    end function unif_dist_rvs_array_iint8
+    end function rvs_unif_array_iint8
 
-    function unif_dist_rvs_array_iint16(loc, scale, array_size)       &
-        result(res)
+    function rvs_unif_array_iint16(loc, scale, array_size) result(res)
 
         integer, intent(in) :: array_size
         integer(int16), intent(in) :: loc, scale
@@ -663,7 +648,7 @@ contains
         integer(int16) :: u, mask, nn
         integer :: i, zeros, bits_left, bits
 
-        if(scale == 0_int16) call error_stop("Error(unif_dist_rvs_array): "   &
+        if(scale == 0_int16) call error_stop("Error(rvs_unif_array): "        &
             //"Uniform distribution scale parameter must be non-zero")
         zeros = leadz(scale)
         bits = bit_size(scale) - zeros
@@ -684,10 +669,9 @@ contains
             end do L1
             res(i) = loc + nn
         end do
-    end function unif_dist_rvs_array_iint16
+    end function rvs_unif_array_iint16
 
-    function unif_dist_rvs_array_iint32(loc, scale, array_size)       &
-        result(res)
+    function rvs_unif_array_iint32(loc, scale, array_size) result(res)
 
         integer, intent(in) :: array_size
         integer(int32), intent(in) :: loc, scale
@@ -695,7 +679,7 @@ contains
         integer(int32) :: u, mask, nn
         integer :: i, zeros, bits_left, bits
 
-        if(scale == 0_int32) call error_stop("Error(unif_dist_rvs_array): "   &
+        if(scale == 0_int32) call error_stop("Error(rvs_unif_array): "        &
             //"Uniform distribution scale parameter must be non-zero")
         zeros = leadz(scale)
         bits = bit_size(scale) - zeros
@@ -716,10 +700,9 @@ contains
             end do L1
             res(i) = loc + nn
         end do
-    end function unif_dist_rvs_array_iint32
+    end function rvs_unif_array_iint32
 
-    function unif_dist_rvs_array_iint64(loc, scale, array_size)       &
-        result(res)
+    function rvs_unif_array_iint64(loc, scale, array_size) result(res)
 
         integer, intent(in) :: array_size
         integer(int64), intent(in) :: loc, scale
@@ -727,7 +710,7 @@ contains
         integer(int64) :: u, mask, nn
         integer :: i, zeros, bits_left, bits
 
-        if(scale == 0_int64) call error_stop("Error(unif_dist_rvs_array): "   &
+        if(scale == 0_int64) call error_stop("Error(rvs_unif_array): "        &
             //"Uniform distribution scale parameter must be non-zero")
         zeros = leadz(scale)
         bits = bit_size(scale) - zeros
@@ -748,13 +731,12 @@ contains
             end do L1
             res(i) = loc + nn
         end do
-    end function unif_dist_rvs_array_iint64
+    end function rvs_unif_array_iint64
 
 
 
 
-    function unif_dist_rvs_array_rsp(loc, scale, array_size)       &
-        result(res)
+    function rvs_unif_array_rsp(loc, scale, array_size) result(res)
 
         integer, intent(in) :: array_size
         real(sp), intent(in) :: loc, scale
@@ -764,17 +746,16 @@ contains
         integer :: i
 
 
-        if(scale == 0._sp) call error_stop("Error(unif_dist_rvs_array):"   &
+        if(scale == 0._sp) call error_stop("Error(rvs_unif_array):"        &
            //" Uniform distribution scale parameter must be non-zero")
         do i = 1, array_size
             tmp = shiftr(dist_rand(INT_ONE), 11)
             t = real(tmp * MESENNE_NUMBER, kind = sp)
             res(i) = loc + scale * t
         end do
-    end function unif_dist_rvs_array_rsp
+    end function rvs_unif_array_rsp
 
-    function unif_dist_rvs_array_rdp(loc, scale, array_size)       &
-        result(res)
+    function rvs_unif_array_rdp(loc, scale, array_size) result(res)
 
         integer, intent(in) :: array_size
         real(dp), intent(in) :: loc, scale
@@ -784,17 +765,16 @@ contains
         integer :: i
 
 
-        if(scale == 0._dp) call error_stop("Error(unif_dist_rvs_array):"   &
+        if(scale == 0._dp) call error_stop("Error(rvs_unif_array):"        &
            //" Uniform distribution scale parameter must be non-zero")
         do i = 1, array_size
             tmp = shiftr(dist_rand(INT_ONE), 11)
             t = real(tmp * MESENNE_NUMBER, kind = dp)
             res(i) = loc + scale * t
         end do
-    end function unif_dist_rvs_array_rdp
+    end function rvs_unif_array_rdp
 
-    function unif_dist_rvs_array_rqp(loc, scale, array_size)       &
-        result(res)
+    function rvs_unif_array_rqp(loc, scale, array_size) result(res)
 
         integer, intent(in) :: array_size
         real(qp), intent(in) :: loc, scale
@@ -804,20 +784,19 @@ contains
         integer :: i
 
 
-        if(scale == 0._qp) call error_stop("Error(unif_dist_rvs_array):"   &
+        if(scale == 0._qp) call error_stop("Error(rvs_unif_array):"        &
            //" Uniform distribution scale parameter must be non-zero")
         do i = 1, array_size
             tmp = shiftr(dist_rand(INT_ONE), 11)
             t = real(tmp * MESENNE_NUMBER, kind = qp)
             res(i) = loc + scale * t
         end do
-    end function unif_dist_rvs_array_rqp
+    end function rvs_unif_array_rqp
 
 
 
 
-    function unif_dist_rvs_array_csp(loc, scale, array_size)       &
-        result(res)
+    function rvs_unif_array_csp(loc, scale, array_size) result(res)
 
         integer, intent(in) :: array_size
         complex(sp), intent(in) :: loc, scale
@@ -827,9 +806,8 @@ contains
         integer :: i
 
 
-        if(scale == (0.0_sp, 0.0_sp)) call error_stop("Error(unif_dist"&
-           //"_rvs_array): Uniform distribution scale parameter must be "      &
-           //"non-zero")
+        if(scale == (0.0_sp, 0.0_sp)) call error_stop("Error(rvs_unif" &
+           //"_array): Uniform distribution scale parameter must be non-zero")
         do i = 1, array_size
             tmp = shiftr(dist_rand(INT_ONE), 11)
             r1 = real(tmp * MESENNE_NUMBER, kind = sp)
@@ -847,10 +825,9 @@ contains
             end if
             res(i) = cmplx(tr, ti, kind=sp)
         end do
-    end function unif_dist_rvs_array_csp
+    end function rvs_unif_array_csp
 
-    function unif_dist_rvs_array_cdp(loc, scale, array_size)       &
-        result(res)
+    function rvs_unif_array_cdp(loc, scale, array_size) result(res)
 
         integer, intent(in) :: array_size
         complex(dp), intent(in) :: loc, scale
@@ -860,9 +837,8 @@ contains
         integer :: i
 
 
-        if(scale == (0.0_dp, 0.0_dp)) call error_stop("Error(unif_dist"&
-           //"_rvs_array): Uniform distribution scale parameter must be "      &
-           //"non-zero")
+        if(scale == (0.0_dp, 0.0_dp)) call error_stop("Error(rvs_unif" &
+           //"_array): Uniform distribution scale parameter must be non-zero")
         do i = 1, array_size
             tmp = shiftr(dist_rand(INT_ONE), 11)
             r1 = real(tmp * MESENNE_NUMBER, kind = dp)
@@ -880,10 +856,9 @@ contains
             end if
             res(i) = cmplx(tr, ti, kind=dp)
         end do
-    end function unif_dist_rvs_array_cdp
+    end function rvs_unif_array_cdp
 
-    function unif_dist_rvs_array_cqp(loc, scale, array_size)       &
-        result(res)
+    function rvs_unif_array_cqp(loc, scale, array_size) result(res)
 
         integer, intent(in) :: array_size
         complex(qp), intent(in) :: loc, scale
@@ -893,9 +868,8 @@ contains
         integer :: i
 
 
-        if(scale == (0.0_qp, 0.0_qp)) call error_stop("Error(unif_dist"&
-           //"_rvs_array): Uniform distribution scale parameter must be "      &
-           //"non-zero")
+        if(scale == (0.0_qp, 0.0_qp)) call error_stop("Error(rvs_unif" &
+           //"_array): Uniform distribution scale parameter must be non-zero")
         do i = 1, array_size
             tmp = shiftr(dist_rand(INT_ONE), 11)
             r1 = real(tmp * MESENNE_NUMBER, kind = qp)
@@ -913,12 +887,12 @@ contains
             end if
             res(i) = cmplx(tr, ti, kind=qp)
         end do
-    end function unif_dist_rvs_array_cqp
+    end function rvs_unif_array_cqp
 
 
 
 
-    elemental function unif_dist_pdf_iint8(x, loc, scale) result(res)
+    elemental function pdf_unif_iint8(x, loc, scale) result(res)
 
         integer(int8), intent(in) :: x, loc, scale
         real :: res
@@ -930,9 +904,9 @@ contains
         else
             res = 1. / (scale + 1_int8)
         end if
-    end function unif_dist_pdf_iint8
+    end function pdf_unif_iint8
 
-    elemental function unif_dist_pdf_iint16(x, loc, scale) result(res)
+    elemental function pdf_unif_iint16(x, loc, scale) result(res)
 
         integer(int16), intent(in) :: x, loc, scale
         real :: res
@@ -944,9 +918,9 @@ contains
         else
             res = 1. / (scale + 1_int16)
         end if
-    end function unif_dist_pdf_iint16
+    end function pdf_unif_iint16
 
-    elemental function unif_dist_pdf_iint32(x, loc, scale) result(res)
+    elemental function pdf_unif_iint32(x, loc, scale) result(res)
 
         integer(int32), intent(in) :: x, loc, scale
         real :: res
@@ -958,9 +932,9 @@ contains
         else
             res = 1. / (scale + 1_int32)
         end if
-    end function unif_dist_pdf_iint32
+    end function pdf_unif_iint32
 
-    elemental function unif_dist_pdf_iint64(x, loc, scale) result(res)
+    elemental function pdf_unif_iint64(x, loc, scale) result(res)
 
         integer(int64), intent(in) :: x, loc, scale
         real :: res
@@ -972,12 +946,12 @@ contains
         else
             res = 1. / (scale + 1_int64)
         end if
-    end function unif_dist_pdf_iint64
+    end function pdf_unif_iint64
 
 
 
 
-    elemental function unif_dist_pdf_rsp(x, loc, scale) result(res)
+    elemental function pdf_unif_rsp(x, loc, scale) result(res)
 
         real(sp), intent(in) :: x, loc, scale
         real :: res
@@ -989,9 +963,9 @@ contains
         else
             res = 1.0 / scale
         end if
-    end function unif_dist_pdf_rsp
+    end function pdf_unif_rsp
 
-    elemental function unif_dist_pdf_rdp(x, loc, scale) result(res)
+    elemental function pdf_unif_rdp(x, loc, scale) result(res)
 
         real(dp), intent(in) :: x, loc, scale
         real :: res
@@ -1003,9 +977,9 @@ contains
         else
             res = 1.0 / scale
         end if
-    end function unif_dist_pdf_rdp
+    end function pdf_unif_rdp
 
-    elemental function unif_dist_pdf_rqp(x, loc, scale) result(res)
+    elemental function pdf_unif_rqp(x, loc, scale) result(res)
 
         real(qp), intent(in) :: x, loc, scale
         real :: res
@@ -1017,12 +991,12 @@ contains
         else
             res = 1.0 / scale
         end if
-    end function unif_dist_pdf_rqp
+    end function pdf_unif_rqp
 
 
 
 
-    elemental function unif_dist_pdf_csp(x, loc, scale) result(res)
+    elemental function pdf_unif_csp(x, loc, scale) result(res)
 
         complex(sp), intent(in) :: x, loc, scale
         real :: res
@@ -1037,9 +1011,9 @@ contains
         else
             res = 0.0
         end if
-    end function unif_dist_pdf_csp
+    end function pdf_unif_csp
 
-    elemental function unif_dist_pdf_cdp(x, loc, scale) result(res)
+    elemental function pdf_unif_cdp(x, loc, scale) result(res)
 
         complex(dp), intent(in) :: x, loc, scale
         real :: res
@@ -1054,9 +1028,9 @@ contains
         else
             res = 0.0
         end if
-    end function unif_dist_pdf_cdp
+    end function pdf_unif_cdp
 
-    elemental function unif_dist_pdf_cqp(x, loc, scale) result(res)
+    elemental function pdf_unif_cqp(x, loc, scale) result(res)
 
         complex(qp), intent(in) :: x, loc, scale
         real :: res
@@ -1071,12 +1045,12 @@ contains
         else
             res = 0.0
         end if
-    end function unif_dist_pdf_cqp
+    end function pdf_unif_cqp
 
 
 
 
-    elemental function unif_dist_cdf_iint8(x, loc, scale) result(res)
+    elemental function cdf_unif_iint8(x, loc, scale) result(res)
 
         integer(int8), intent(in) :: x, loc, scale
         real :: res
@@ -1090,9 +1064,9 @@ contains
         else
             res = 1.0
         end if
-    end function unif_dist_cdf_iint8
+    end function cdf_unif_iint8
 
-    elemental function unif_dist_cdf_iint16(x, loc, scale) result(res)
+    elemental function cdf_unif_iint16(x, loc, scale) result(res)
 
         integer(int16), intent(in) :: x, loc, scale
         real :: res
@@ -1106,9 +1080,9 @@ contains
         else
             res = 1.0
         end if
-    end function unif_dist_cdf_iint16
+    end function cdf_unif_iint16
 
-    elemental function unif_dist_cdf_iint32(x, loc, scale) result(res)
+    elemental function cdf_unif_iint32(x, loc, scale) result(res)
 
         integer(int32), intent(in) :: x, loc, scale
         real :: res
@@ -1122,9 +1096,9 @@ contains
         else
             res = 1.0
         end if
-    end function unif_dist_cdf_iint32
+    end function cdf_unif_iint32
 
-    elemental function unif_dist_cdf_iint64(x, loc, scale) result(res)
+    elemental function cdf_unif_iint64(x, loc, scale) result(res)
 
         integer(int64), intent(in) :: x, loc, scale
         real :: res
@@ -1138,12 +1112,12 @@ contains
         else
             res = 1.0
         end if
-    end function unif_dist_cdf_iint64
+    end function cdf_unif_iint64
 
 
 
 
-    elemental function unif_dist_cdf_rsp(x, loc, scale) result(res)
+    elemental function cdf_unif_rsp(x, loc, scale) result(res)
 
         real(sp), intent(in) :: x, loc, scale
         real :: res
@@ -1157,9 +1131,9 @@ contains
         else
             res = 1.0
         end if
-    end function unif_dist_cdf_rsp
+    end function cdf_unif_rsp
 
-    elemental function unif_dist_cdf_rdp(x, loc, scale) result(res)
+    elemental function cdf_unif_rdp(x, loc, scale) result(res)
 
         real(dp), intent(in) :: x, loc, scale
         real :: res
@@ -1173,9 +1147,9 @@ contains
         else
             res = 1.0
         end if
-    end function unif_dist_cdf_rdp
+    end function cdf_unif_rdp
 
-    elemental function unif_dist_cdf_rqp(x, loc, scale) result(res)
+    elemental function cdf_unif_rqp(x, loc, scale) result(res)
 
         real(qp), intent(in) :: x, loc, scale
         real :: res
@@ -1189,12 +1163,12 @@ contains
         else
             res = 1.0
         end if
-    end function unif_dist_cdf_rqp
+    end function cdf_unif_rqp
 
 
 
 
-    elemental function unif_dist_cdf_csp(x, loc, scale) result(res)
+    elemental function cdf_unif_csp(x, loc, scale) result(res)
 
         complex(sp), intent(in) :: x, loc, scale
         real :: res
@@ -1221,9 +1195,9 @@ contains
         else if(r2 .and. i2)then
              res = 1.0
         end if
-    end function unif_dist_cdf_csp
+    end function cdf_unif_csp
 
-    elemental function unif_dist_cdf_cdp(x, loc, scale) result(res)
+    elemental function cdf_unif_cdp(x, loc, scale) result(res)
 
         complex(dp), intent(in) :: x, loc, scale
         real :: res
@@ -1250,9 +1224,9 @@ contains
         else if(r2 .and. i2)then
              res = 1.0
         end if
-    end function unif_dist_cdf_cdp
+    end function cdf_unif_cdp
 
-    elemental function unif_dist_cdf_cqp(x, loc, scale) result(res)
+    elemental function cdf_unif_cqp(x, loc, scale) result(res)
 
         complex(qp), intent(in) :: x, loc, scale
         real :: res
@@ -1279,7 +1253,7 @@ contains
         else if(r2 .and. i2)then
              res = 1.0
         end if
-    end function unif_dist_cdf_cqp
+    end function cdf_unif_cqp
 
 
 
