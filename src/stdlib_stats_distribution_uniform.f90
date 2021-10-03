@@ -16,12 +16,12 @@ module stdlib_stats_distribution_uniform
 
 
     interface rvs_uniform
-    !! Version experimental
+    !! version: experimental
     !!
     !! Get uniformly distributed random variate for integer, real and complex
     !! variables.
     !! ([Specification](../page/specs/stdlib_stats_distribution_uniform.html#
-    !! description))
+    !! rvs_uniform-uniform-distribution-random-variates))
 
         module procedure rvs_unif_0_rsp                 ! 0 dummy variable
 
@@ -61,12 +61,12 @@ module stdlib_stats_distribution_uniform
 
 
     interface pdf_uniform
-    !! Version experimental
+    !! version: experimental
     !!
     !! Get uniform distribution probability density (pdf) for integer, real and
     !! complex variables.
     !! ([Specification](../page/specs/stdlib_stats_distribution_uniform.html#
-    !! description))
+    !! pdf_uniform-uniform-probability-density-function))
 
         module procedure pdf_unif_iint8
         module procedure pdf_unif_iint16
@@ -82,12 +82,12 @@ module stdlib_stats_distribution_uniform
 
 
     interface cdf_uniform
-    !! Version experimental
+    !! version: experimental
     !!
     !! Get uniform distribution cumulative distribution function (cdf) for integer,
     !! real and complex variables.
     !! ([Specification](../page/specs/stdlib_stats_distribution_uniform.html#
-    !! description))
+    !! cdf_uniform-uniform-cumulative-distribution-function))
     !!
         module procedure cdf_unif_iint8
         module procedure cdf_unif_iint16
@@ -103,12 +103,12 @@ module stdlib_stats_distribution_uniform
 
 
     interface shuffle
-    !! Version experimental
+    !! version: experimental
     !!
     !! Fisher-Yates shuffle algorithm for a rank one array of integer, real and
     !! complex variables.
     !! ([Specification](../page/specs/stdlib_stats_distribution_uniform.html#
-    !! description))
+    !! shuffle-using-fisher-yates-algorithm-to-generate-a-random-permutation-of-a-list))
     !!
         module procedure shuffle_iint8
         module procedure shuffle_iint16
