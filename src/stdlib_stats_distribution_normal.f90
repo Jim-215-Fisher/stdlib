@@ -62,7 +62,7 @@ module stdlib_stats_distribution_normal
 
 
     interface cdf_normal
-    !! Version experimental
+    !! version: experimental
     !!
     !! Normal Distribution Cumulative Distribution Function
     !! ([Specification](../page/specs/stdlib_stats_distribution_normal.html#
