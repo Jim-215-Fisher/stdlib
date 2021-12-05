@@ -402,7 +402,7 @@ contains
 
         if(scale == 0._sp) call error_stop("Error(pdf_norm): Normal"       &
             //"distribution scale parameter must be non-zero")
-        res = exp(- 0.5_sp * (x - loc) * (x - loc) / (scale * scale)) /    &
+        res = exp(- 0.5_sp * ((x - loc) / scale) * (x - loc) / scale) /    &
               (sqrt_2_Pi * scale)
     end function pdf_norm_rsp
 
@@ -416,7 +416,7 @@ contains
 
         if(scale == 0._dp) call error_stop("Error(pdf_norm): Normal"       &
             //"distribution scale parameter must be non-zero")
-        res = exp(- 0.5_dp * (x - loc) * (x - loc) / (scale * scale)) /    &
+        res = exp(- 0.5_dp * ((x - loc) / scale) * (x - loc) / scale) /    &
               (sqrt_2_Pi * scale)
     end function pdf_norm_rdp
 
