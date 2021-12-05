@@ -1,5 +1,5 @@
 module stdlib_stats_distribution_normal
-    use stdlib_kinds
+    use stdlib_kinds, only : sp, dp, xdp, qp, int32
     use stdlib_error, only : error_stop
     use stdlib_random, only : dist_rand
     use stdlib_stats_distribution_uniform, only : uni=>rvs_uniform
@@ -397,7 +397,7 @@ contains
     ! Normal distribution probability density function
     !
         real(sp), intent(in) :: x, loc, scale
-        real :: res
+        real(sp) :: res
         real(sp), parameter :: sqrt_2_pi = sqrt(2.0_sp * acos(-1.0_sp))
 
         if(scale == 0._sp) call error_stop("Error(pdf_norm): Normal"       &
@@ -411,7 +411,7 @@ contains
     ! Normal distribution probability density function
     !
         real(dp), intent(in) :: x, loc, scale
-        real :: res
+        real(dp) :: res
         real(dp), parameter :: sqrt_2_pi = sqrt(2.0_dp * acos(-1.0_dp))
 
         if(scale == 0._dp) call error_stop("Error(pdf_norm): Normal"       &
@@ -425,7 +425,7 @@ contains
 
     impure elemental function pdf_norm_csp(x, loc, scale) result(res)
         complex(sp), intent(in) :: x, loc, scale
-        real :: res
+        real(sp) :: res
 
         res = pdf_norm_rsp(x % re, loc % re, scale % re)
         res = res * pdf_norm_rsp(x % im, loc % im, scale % im)
@@ -433,7 +433,7 @@ contains
 
     impure elemental function pdf_norm_cdp(x, loc, scale) result(res)
         complex(dp), intent(in) :: x, loc, scale
-        real :: res
+        real(dp) :: res
 
         res = pdf_norm_rdp(x % re, loc % re, scale % re)
         res = res * pdf_norm_rdp(x % im, loc % im, scale % im)
@@ -447,12 +447,12 @@ contains
     ! Normal distribution cumulative distribution function
     !
         real(sp), intent(in) :: x, loc, scale
-        real :: res
+        real(sp) :: res
         real(sp), parameter :: sqrt_2 = sqrt(2.0_sp)
 
         if(scale == 0._sp) call error_stop("Error(cdf_norm): Normal"       &
             //"distribution scale parameter must be non-zero")
-        res = (1.0_sp + erf((x - loc) / (scale * sqrt_2))) / 2.0_sp
+        res = erfc(- (x - loc) / (scale * sqrt_2)) / 2.0_sp
     end function cdf_norm_rsp
 
     impure elemental function cdf_norm_rdp(x, loc, scale) result(res)
@@ -460,12 +460,12 @@ contains
     ! Normal distribution cumulative distribution function
     !
         real(dp), intent(in) :: x, loc, scale
-        real :: res
+        real(dp) :: res
         real(dp), parameter :: sqrt_2 = sqrt(2.0_dp)
 
         if(scale == 0._dp) call error_stop("Error(cdf_norm): Normal"       &
             //"distribution scale parameter must be non-zero")
-        res = (1.0_dp + erf((x - loc) / (scale * sqrt_2))) / 2.0_dp
+        res = erfc(- (x - loc) / (scale * sqrt_2)) / 2.0_dp
     end function cdf_norm_rdp
 
 
@@ -473,7 +473,7 @@ contains
 
     impure elemental function cdf_norm_csp(x, loc, scale) result(res)
         complex(sp), intent(in) :: x, loc, scale
-        real :: res
+        real(sp) :: res
 
         res = cdf_norm_rsp(x % re, loc % re, scale % re)
         res = res * cdf_norm_rsp(x % im, loc % im, scale % im)
@@ -481,7 +481,7 @@ contains
 
     impure elemental function cdf_norm_cdp(x, loc, scale) result(res)
         complex(dp), intent(in) :: x, loc, scale
-        real :: res
+        real(dp) :: res
 
         res = cdf_norm_rdp(x % re, loc % re, scale % re)
         res = res * cdf_norm_rdp(x % im, loc % im, scale % im)
